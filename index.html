@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python & AI Learning Hub - 3D Interactive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 3D Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Floating Particles -->
+  <div class="particles-overlay" id="particles"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Python<span>AI</span>Hub</div>
+    <nav>
+      <a href="#explore">Explore</a>
+      <a href="#topics">Topics</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Master Python & AI</h1>
+    <p class="subtitle">
+      Your interactive 3D learning journey into Python programming and Artificial Intelligence. 
+      Click any topic card below to dive deep into each concept.
+    </p>
+    <a href="#explore" class="cta-btn">Start Exploring</a>
+  </section>
+
+  <!-- Explore Topics -->
+  <section id="explore">
+    <h2 class="section-title">Explore Topics</h2>
+    <p class="section-subtitle">Click on any card to navigate to its detailed page</p>
+
+    <div class="carousel-container">
+      <div class="carousel">
+
+        <!-- Card 1 -->
+        <a href="pages/why-python.html" class="slide-card" data-color="cyan">
+          <span class="card-number">01</span>
+          <div class="card-icon">🐍</div>
+          <h3>Why We Learn Python</h3>
+          <p>Discover why Python is the #1 programming language for beginners, data science, AI, and web development.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="pages/how-to-use.html" class="slide-card" data-color="purple">
+          <span class="card-number">02</span>
+          <div class="card-icon">⚡</div>
+          <h3>How to Use Python</h3>
+          <p>Learn how to write, run, and debug Python code. From your first script to building applications.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="pages/when-used.html" class="slide-card" data-color="green">
+          <span class="card-number">03</span>
+          <div class="card-icon">🌍</div>
+          <h3>When Python is Used</h3>
+          <p>Explore real-world scenarios and industries where Python dominates — from startups to NASA.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="pages/projects.html" class="slide-card" data-color="orange">
+          <span class="card-number">04</span>
+          <div class="card-icon">🚀</div>
+          <h3>Real-Time Projects</h3>
+          <p>Build portfolio-worthy projects: web apps, chatbots, ML models, automation scripts, and more.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="pages/installation.html" class="slide-card" data-color="pink">
+          <span class="card-number">05</span>
+          <div class="card-icon">💻</div>
+          <h3>How to Install Python</h3>
+          <p>Step-by-step installation guide for Windows, macOS, and Linux. Set up your development environment.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="pages/concepts.html" class="slide-card" data-color="blue">
+          <span class="card-number">06</span>
+          <div class="card-icon">📚</div>
+          <h3>Python Concepts</h3>
+          <p>Master variables, loops, functions, OOP, file handling, error handling, and advanced patterns.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 7 -->
+        <a href="pages/libraries.html" class="slide-card" data-color="teal">
+          <span class="card-number">07</span>
+          <div class="card-icon">📦</div>
+          <h3>Python Libraries</h3>
+          <p>Explore essential libraries: NumPy, Pandas, Flask, Django, TensorFlow, Matplotlib, and 50+ more.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 8 -->
+        <a href="pages/automation-testing.html" class="slide-card" data-color="yellow">
+          <span class="card-number">08</span>
+          <div class="card-icon">🧪</div>
+          <h3>Automation Testing</h3>
+          <p>Learn Selenium, PyTest, Robot Framework, and CI/CD integration for automated testing.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 9 -->
+        <a href="pages/python-ai.html" class="slide-card" data-color="indigo">
+          <span class="card-number">09</span>
+          <div class="card-icon">🤖</div>
+          <h3>Python in AI</h3>
+          <p>Deep dive into Machine Learning, Deep Learning, NLP, Computer Vision, and Generative AI with Python.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 10 -->
+        <a href="pages/interview-questions.html" class="slide-card" data-color="red">
+          <span class="card-number">10</span>
+          <div class="card-icon">💡</div>
+          <h3>Interview Questions</h3>
+          <p>100+ Python interview questions with detailed answers — from beginner to expert level.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 11 -->
+        <a href="pages/commands.html" class="slide-card" data-color="lime">
+          <span class="card-number">11</span>
+          <div class="card-icon">⌨️</div>
+          <h3>Python Commands</h3>
+          <p>Complete reference of all Python built-in functions, keywords, operators, and essential commands.</p>
+          <div class="card-arrow">
+            Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 PythonAI Hub — Interactive Learning Platform. Built with passion for Python & AI.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
